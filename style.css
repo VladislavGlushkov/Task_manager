@@ -74,9 +74,71 @@ input,button{
 }
 
 main{
-    flex: 1 1 0%;
+    flex: 1;
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
+}
 
+.task-list{
+    padding: 1rem;
+}
+.task-list h2{
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 1rem;
+}
+
+.tasks .tasks-div{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--darkest);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-top: 0.5rem;
+}
+
+.task .tasks-div .content{
+    flex: 2;
+    display: flex;
+    align-items: center;
+}
+
+.tasks .tasks-div .content .cbox{
+    margin: 0 10px;
+}
+
+.tasks .tasks-div .content .text{
+    color:var(--light);
+    font-size: 1.12rem;
+    width: 100%;
+    display: block;
+    transition: 0.4s;
+}
+
+.tasks .tasks-div .actions button:hover{
+    opacity:0.7;
+}
+
+.tasks .tasks-div .actions button:active{
+    opacity: 0.5;
+}
+
+.tasks .tasks-div .actions .delete{
+    color: rgb(174, 33, 54);
+}
+
+.italic{
+    font-style: italic;
+    text-decoration: line-through;
+}
+
+.normal{
+    font-style: normal;
+}
+
+.edit{
+    color: #ffffff;
+    margin: 0 9px;
+    font-size: 17px;
 }
